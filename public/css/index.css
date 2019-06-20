@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Arimo;
+    font-weight: normal;
+    src: url(../fonts/Arimo-Regular.ttf);
+}
+@font-face {
+    font-family: Arimo;
+    font-weight: bold;
+    src: url(../fonts/Arimo-Bold.ttf);
+}
+* {
+    font-family: Arimo, sans-serif;
+	transition: 0.2s linear;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color: rgb(245, 245, 245);
+    position: relative;
+}
+header {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    padding: 1vw;
+    background-color: rgb(144, 187, 144);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-template-columns: 7vw 30vw 44vw;
+}
+.logo img {
+    width: 100%;
+}
+.site-title {
+    color: whitesmoke;
+    display: flex;
+    font-size: 2.2rem;
+    flex-direction: column;
+    margin-left: 3vw;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.site-title span:last-child {
+    font-size: 1rem;
+    font-weight: normal;
+}
+nav {
+    display: flex;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    align-items: center; 
+}
+nav li {
+    list-style-type: none;
+    margin: 0 1vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+}
+nav li:hover {
+    border-bottom-color: whitesmoke;
+}
+nav a:hover {
+    text-decoration-line: none;
+    color: white;
+}
+nav a {
+    color: rgb(240, 240, 240);
+    text-decoration-line: none;
+}
+.subnav {
+    width: 100%;
+    padding: .8vw 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    align-items: center;
+    background-color: rgb(95, 139, 95);
+}
+.subnav .title {
+    font-weight: bold;
+}
+.subnav .path {
+    font-size: 1rem;
+}
+.content {
+    width: 70%;
+    margin: 0 1.5vw;
+    margin-left: 1.5vw;
+    margin-top: 5vw;
+}
+.widgets {
+    display: flex; 
+    flex-direction: column;
+}
+main .row {
+    display: flex;
+    width: 100%;
+}
+section {
+    margin-top: 5vw;
+    width: calc(30% - 4.5vw);
+    margin-right: 1.5vw;
+}
+.widget {
+    display: flex; 
+    flex-direction: column; 
+}
+.widget-header {
+    padding: 1vw;
+    background-color: black;
+    color: whitesmoke;
+    border-left: 5px solid rgb(95, 139, 95);
+}
+.widget-body {
+    padding: 1vw;
+}
+.cont {
+    color: black;
+    margin-bottom: 2vw;
+}
+.new-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5rem;
+    max-height: calc(1.5rem * 10); 
+}
+.full {
+    max-height: unset;
+}
+.new {
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+.new .date {
+    background-color: rgb(207, 36, 36);
+    color: white;
+    width: 6vw;
+}
+.new-title {
+    font-weight: bold;
+    margin: 1vw 0;
+}
+.new-header {
+    display: grid;
+    grid-template-columns: 10vw 20vw;
+    grid-template-rows: 1fr;
+}
+.new-img img {
+    width: 80%;
+    margin: 1vw 0;
+}
+
+.new a {
+    color: whitesmoke;
+    background-color: rgb(95, 139, 95);
+    padding: .5vw 2vw;
+    border-radius: .5vw;
+    margin-top: 2vw;
+    transition: background .3s linear;
+    display: inline-block;
+}
+.new a:hover {
+    text-decoration-line: none;
+    background-color: rgb(144, 187, 144);
+}
+.paginate {
+    margin-left: 2vw;
+}
+.questions, .card-block {
+    padding: 1.5vw;
+}
+.questions a:hover {
+    text-decoration-line: none;
+}
+
+.reviews, .contact {
+    padding: 1.5vw;
+}
+.reviews-bl, .r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-bl {
+    margin-bottom: 2vw;
+}
+.r {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1vw;
+}
+.r .name {
+    color: rgb(99, 165, 185);
+}
+.r .separator {
+    margin-top: 1vw;
+    border: .5px solid rgb(196, 196, 196);
+    width: 100%;
+}
+.reviews form {
+    width: 80%;
+}
+a {
+    color: black;
+}
+.nav-link {
+    color: rgb(70, 70, 70);
+}
+.nav-link:hover {
+    color: rgb(26, 26, 26);
+}
+.tab-pane {
+    padding: 2vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#dee2e6 #dee2e6 #f8fafc;
+}
+.ss {
+    font-weight: bold;
+    margin-bottom: 0;
+}
